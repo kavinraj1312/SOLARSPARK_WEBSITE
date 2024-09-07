@@ -1,0 +1,110 @@
+.install {
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  /* Header Section */
+  .install-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .install-header h1 {
+    font-size: 2.5rem;
+    color: #1e88e5;
+    margin-bottom: 10px;
+  }
+  
+  .install-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Gallery Section */
+  .gallery-section {
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    font-size: 2rem;
+    color: #1e88e5;
+    margin-bottom: 20px;
+  }
+  
+  .install-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .install-item {
+    background-color: #fff;
+    padding: 15px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .install-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .install-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image-info {
+    text-align: left;
+  }
+  
+  .image-place {
+    font-size: 1.4rem;
+    color: #ff5722;
+    margin-bottom: 5px;
+  }
+  
+  .image-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Spinner for loading */
+  .spinner {
+    margin: 0 auto;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #1e88e5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Error Message */
+  .error {
+    color: #ff5722;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  

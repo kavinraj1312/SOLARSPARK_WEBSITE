@@ -1,0 +1,57 @@
+.installation-types-container {
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #f9f9f9, #e3f2fd); /* Match Product's background */
+    border-radius: 8px; /* Consistent border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Consistent shadow */
+    width: 100%; 
+  }
+  
+  .installation-types-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px; /* Match font size with Product header */
+    color: #1e88e5; /* Match Product header color */
+  }
+  
+  .installation-types-list {
+    display: flex;
+    flex-direction: column; /* Align with Product component */
+    gap: 40px; /* Add spacing similar to Product */
+  }
+  
+  .installation-type-card {
+    display: flex; /* Align layout */
+    flex-direction: row; /* Align with Product detail */
+    align-items: center; /* Align content vertically */
+    gap: 20px; /* Consistent spacing */
+    padding: 20px; /* Consistent padding */
+    background-color: #fff; /* Match background color */
+    border-radius: 8px; /* Consistent border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Same hover effect */
+  }
+  
+  .installation-type-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .installation-type-image {
+    width: 40%; /* Same width as Product images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Consistent border radius */
+    margin-bottom: 20px; /* Space below image */
+  }
+  
+  .installation-type-title {
+    font-size: 28px; /* Match Product title font size */
+    color: #ff5722; /* Match Product title color */
+    margin-bottom: 10px; /* Consistent margin */
+  }
+  
+  .installation-type-description {
+    font-size: 18px; /* Match Product description font size */
+    color: #666; /* Match Product description color */
+  }
+  

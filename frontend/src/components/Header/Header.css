@@ -1,0 +1,102 @@
+.header {
+    height: 34vw; /* Relative height for responsiveness */
+    margin: 30px auto;
+    background: url('/header.jpg') no-repeat center center; /* Center the background */
+    background-size: cover; /* Cover the entire header area */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Content Styling */
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header-content h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px); /* Responsive font size */
+    margin: 0; /* Remove default margin */
+}
+
+.header-content p {
+    color: white;
+    font-size: 1.2vw; /* Adjusted font size for readability */
+    line-height: 1.5; /* Improve readability */
+    margin: 0; /* Remove default margin */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Tablets and Medium Devices */
+@media (max-width: 1024px) {
+    .header {
+        height: 40vw; /* Increase height slightly */
+    }
+
+    .header-content {
+        max-width: 70%; /* Make the content wider */
+        left: 4vw; /* Adjust positioning */
+        bottom: 12%; /* Adjust positioning */
+    }
+
+    .header-content h2 {
+        font-size: max(6vw, 20px); /* Adjust font size */
+    }
+
+    .header-content p {
+        font-size: 1.5vw; /* Adjust font size */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .header {
+        height: 50vw; /* Increase height further */
+    }
+
+    .header-content {
+        max-width: 80%; /* Full width */
+        left: 5vw; /* Center content */
+        bottom: 15%; /* Adjust positioning */
+    }
+
+    .header-content h2 {
+        font-size: max(7vw, 18px); /* Larger text */
+    }
+
+    .header-content p {
+        font-size: 2.5vw; /* Larger text */
+    }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 480px) {
+    .header {
+        height: 60vw; /* Increase height for small screens */
+    }
+
+    .header-content {
+        max-width: 90%; /* Near full width */
+        left: 5vw; /* Center content */
+        bottom: 18%; /* Adjust positioning */
+    }
+
+    .header-content h2 {
+        font-size: 5vw; /* Adjust font size */
+    }
+
+    .header-content p {
+        font-size: 3vw; /* Adjust font size */
+    }
+}

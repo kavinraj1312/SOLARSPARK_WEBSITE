@@ -1,0 +1,115 @@
+/* Footer Styles */
+.footer {
+    width: 100vw; /* Full width */
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 8vw;
+    padding-top: 80px;
+    box-sizing: border-box;
+    margin-top:80px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px; /* Restricts content width for readability */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Grid layout for three sections */
+    gap: 80px;
+    margin: 0 auto; /* Center content */
+    padding: 0 8vw;
+    box-sizing: border-box;
+}
+
+/* Footer Left, Center, and Right Sections */
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-left h2.logo {
+    color:tomato;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #d9d9d9;
+}
+
+/* Social Media Icons Styling */
+.social-media-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Center and Right Styling */
+.footer-center h2, .footer-right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-center ul, .footer-right ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-center ul li, .footer-right ul li {
+    margin-bottom: 10px;
+    color: #d9d9d9;
+}
+
+.footer-center ul li:hover, .footer-right ul li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Footer Copyright Styling */
+.footer hr {
+    width: 100%;
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #555;
+}
+
+.footer-copyright {
+    color: #d9d9d9;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack columns for smaller screens */
+        gap: 40px;
+    }
+    .footer {
+        padding: 20px 5vw;
+    }
+    .footer-center h2, .footer-right h2{
+        font-size: 1em;
+
+    }
+}

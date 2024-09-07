@@ -1,0 +1,119 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f4f7; /* Keeping a light background for a clean look */
+    flex-wrap: wrap; /* Handles smaller screens */
+    border-radius: 12px; /* Adds rounded corners for a modern feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+    margin: 20px; /* Adds spacing around the hero section */
+  }
+  
+  .hero-content {
+    max-width: 50%;
+    flex: 1; /* Allows flexibility */
+    margin-right: 20px; /* Adds some spacing between text and image */
+    animation: fadeIn 1s ease-in-out; /* Adds a fade-in effect */
+  }
+  
+  .hero-image {
+    flex: 1; /* Allows flexibility */
+    max-width: 500px; /* Set a max-width for better control */
+    margin: 0 auto; /* Center the image container */
+    animation: fadeIn 1s ease-in-out; /* Adds a fade-in effect */
+  }
+  
+  .hero-image img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 12px; /* Adds a slight curve to the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Adds a more defined shadow */
+    transition: transform 0.3s; /* Adds a transition effect for hover */
+  }
+  
+  .hero-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 24px; /* Adds more rounding for a modern look */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3); /* Adds shadow to the button */
+  }
+  
+  .cta-button:hover {
+    background-color: #e68900; /* Slightly darker on hover */
+    transform: translateY(-3px); /* Adds a subtle lift effect */
+  }
+  
+  .about,
+  .features,
+  .testimonials,
+  .call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    background: linear-gradient(135deg, #ffffff, #f7f9fc); /* Subtle gradient background */
+    margin-bottom: 20px; /* Adds spacing between sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  }
+  
+  .feature-list,
+  .testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    margin-top: 20px;
+  }
+  
+  .feature-item,
+  .testimonial-item {
+    flex: 1 1 30%; /* Responsive flex basis */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    margin: 10px; /* Adds some margin for spacing */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adds hover transition */
+  }
+  
+  .feature-item:hover,
+  .testimonial-item:hover {
+    transform: translateY(-5px); /* Lifts the item slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darkens shadow on hover */
+  }
+
+  h3{
+    color: #ff5722;
+  }
+  h2,h1{ color: #ff9800;}
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 5px solid #ff9800; /* Adds a border top for accent */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05); /* Adds shadow at the top */
+  }
+  
+  /* Adding Keyframes for Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

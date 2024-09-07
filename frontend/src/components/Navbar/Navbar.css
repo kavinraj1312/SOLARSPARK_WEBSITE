@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    position: sticky; /* Keeps the navbar sticky */
+    top: 0; /* Sticks the navbar to the top when scrolling */
+    width: 100%; /* Full width to align with the page */
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white; /* Ensures background is solid to prevent transparency */
+    z-index: 1000; /* Keeps the navbar above other content */
+    bottom: 20px;
+}
+
+.navbar .logo {
+    width: 200px;
+    color: tomato;
+    font-size: 24px; /* Increased font size for better visibility */
+    font-weight: 700;
+}
+
+.navbar-menu {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar .navbar-right {
+    cursor: pointer;
+}

@@ -1,0 +1,134 @@
+/* Container for the entire page */
+.install {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    min-height: 100vh;
+}
+
+/* Loading and error messages */
+.load,
+.error {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Styling for the list of images */
+.install-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Styling for each list item (card) */
+.install-list li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; /* Control the width of each card */
+    text-align: center;
+    margin: 10px; /* Add some margin for spacing */
+    padding-bottom: 15px; /* Space for buttons */
+}
+
+/* Hover effect for each card */
+.install-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.install-image {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: 200px; /* Set a fixed height to maintain uniform size */
+    object-fit: cover; /* Make sure the image fits nicely within the fixed dimensions */
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect for images */
+.install-image:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Header (place name) styling */
+.install-list h1 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px 0;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+/* Description paragraph styling */
+.install-list p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+/* Common button styling for delete and edit buttons */
+.install-list button {
+    display: inline-flex; /* Flex to center icon */
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff; /* Base color for buttons */
+    color: #fff; /* White text */
+    border: none;
+    padding: 8px 12px; /* Padding for click area */
+    margin: 5px; /* Margin for spacing */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+}
+
+/* Specific styling for delete button */
+.install-list button.delete {
+    background-color: #dc3545; /* Red color for delete button */
+}
+
+/* Hover effect for delete button */
+.install-list button.delete:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+    transform: scale(1.05);
+}
+
+/* Specific styling for edit button */
+.install-list button.edit {
+    background-color: #28a745; /* Green color for edit button */
+}
+
+/* Hover effect for edit button */
+.install-list button.edit:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .install-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .install-list li {
+        width: 80%;
+    }
+}

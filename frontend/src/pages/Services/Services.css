@@ -1,0 +1,70 @@
+.services-container {
+    width: 100%;
+    margin: 30px auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffffff, #f7f9fc); /* Subtle gradient background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  }
+  
+  .services-header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e88e5; /* Color consistent with overall theme */
+    margin-bottom: 20px;
+  }
+  
+  .services-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px; /* Adds spacing below the description */
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  .services-types {
+    margin-bottom: 40px; /* Adds spacing between sections */
+  }
+  
+  .benefits-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff9800; /* Accent color */
+    margin-bottom: 30px;
+  }
+  
+  .benefits-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 30px; /* Adds spacing between items */
+  }
+  
+  .benefit-item {
+    flex: 1 1 30%; /* Allows responsive layout */
+    background-color: #fff; /* White background for contrast */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Centers the text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .benefit-title {
+    font-size: 1.5rem;
+    color: #ff5722; /* Accent color */
+    margin-bottom: 10px;
+  }
+  
+  .benefit-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6; /* Improves readability */
+  }
+  
